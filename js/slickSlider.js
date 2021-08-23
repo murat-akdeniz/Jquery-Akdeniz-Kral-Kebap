@@ -1,4 +1,5 @@
 $(document).ready(() => {
+
    $('.slider').slick({
       infinite: true,
       slidesToShow: 5,
@@ -20,14 +21,13 @@ $(document).ready(() => {
             settings: {
                slidesToShow: 2,
                centerMode: false,
-
             }
          },
          {
             breakpoint: 768,
             settings: {
                slidesToShow: 1,
-
+               centerMode: true,
             }
          },
          {
@@ -42,6 +42,7 @@ $(document).ready(() => {
       ]
 
    });
+
 
 
 })

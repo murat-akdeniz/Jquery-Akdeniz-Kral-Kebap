@@ -32,12 +32,35 @@
   margin-top: 5rem;
 }
 
+.slider {
+  position: relative;
+  /* ekran 768 ve 996 arasında iken iki slider var.
+     yani slick-center classı devre dışında kaldığı için 
+     .slider classından önce border tanımladım.
+   */
+}
+@media screen and (min-width: 768px) and (max-width: 996px) {
+  .slider::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    display: inline-block;
+    border: 2px solid #b42126;
+    border-radius: 35px;
+  }
+}
 .slider__items {
   padding: 1.5rem;
 }
 .slider__items .menu-modern {
   position: relative;
   text-align: center;
+  /* img lere sabit bir boyut verdim. 
+     responsive yapmak için zaten html classa img-fluid verdim
+    */
 }
 .slider__items .menu-modern .caption h5, .slider__items .menu-modern .caption .h5 {
   font-size: 1.5rem;
@@ -60,6 +83,14 @@
   font-size: 1rem;
   font-style: italic;
   font-weight: 600;
+  /* paragraf küçük boyutlarda kutunun borderından
+     dışarı taşmaması için padding right ve left kullandım.
+  */
+}
+@media screen and (max-width: 768px) {
+  .slider__items .menu-modern .caption .text-italic {
+    padding: 0 5rem;
+  }
 }
 .slider__items .menu-modern .caption .btnAll {
   text-decoration: none;
@@ -92,6 +123,10 @@
   display: flex;
 }
 
+/* merkezdeki sliderın etrafına hem bir çerçeve koydum
+   hem de merkez slider aktif olduğunda width height font size...
+   gibi özellikleri otomakit olarak büyültüm. transform scale sayesinde
+ */
 .slick-center {
   transform: scale(1.2);
   transition: all ease 350ms;
@@ -108,9 +143,25 @@
   border: 2px solid #b42126;
   border-radius: 35px;
 }
+@media screen and (max-width: 768px) {
+  .slick-center::before {
+    right: 80px;
+    left: 80px;
+  }
+}
 
 .slick-slide {
   margin: 0 2rem;
+  /* 996 px altında iken img leri ortalamak için */
+}
+@media screen and (max-width: 996px) {
+  .slick-slide {
+    margin: 0;
+  }
+  .slick-slide figure {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .prev_arrow {
@@ -161,6 +212,11 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  #section-slider {
+    display: none;
+  }
+}
 .menu-buttons {
   display: flex;
   align-items: center;
