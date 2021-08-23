@@ -1,0 +1,29 @@
+$base_color:#e60012  !default;
+.topMenu{
+   background-color: $base_color;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   ul{  
+      display: flex;
+      flex-direction: column nowrap;
+      justify-content: center;
+      align-items: center;    
+      a{
+         text-decoration: none;
+         color:#fff;
+         margin-right: 2rem;         
+      }
+      .logo{
+         display: block;
+         width: 200px;
+         height: 200px;   
+         z-index: 1; 
+         margin-top: 5rem; 
+            
+      }
+
+   }
+
+}

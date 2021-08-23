@@ -1,0 +1,138 @@
+
+.slider{    
+   
+   &__items{
+      padding:1.5rem; 
+      
+     //burada padding vermem ile transform scale(1.2) özelliği düzgün çalıştı
+      .menu-modern{         
+         position: relative;
+         text-align: center;
+         
+         
+           
+         .caption{
+            h5{
+               font-size: 1.5rem;
+               font-weight: 600;
+               a{
+                  text-decoration: none;
+                  color: #f60304;
+               }
+            }
+            .price{
+               font-size: 1.3rem;
+               font-weight: 600;
+               margin:0;
+               padding-bottom: 1rem;
+               
+            }
+            .price::before{
+               content: '\20BA';        
+          
+            }
+            .text-italic{
+               font-size: 1rem;
+               font-style: italic;
+               font-weight: 600;
+            }
+            .btnAll{
+               text-decoration: none;
+               color:#fff;
+               background-color: #f60304;
+               border: 1px solid transparent;               
+               letter-spacing: 0.05em;
+               border-radius: 35px;
+               font-size: 1.2rem;               
+               border-width: 2px;
+               padding: 10px 28px;
+               cursor: pointer;
+               
+               &:hover {
+                  color: #fff;
+                  background-color: rgb(141, 0, 0);
+                  transition: all .5s ease-in-out;               
+               }
+            
+         }
+            
+      }
+
+      img{
+         width: 260px;
+         height: 195px;         
+      }
+      }   
+   }
+}
+/* uzun uğraşlar sonucunda slick-center divine verdiğim
+   borderda top ve bottom kenarları görünmoyordu.meğer
+   overflow:hidden imiş....
+ */
+.slick-list{
+   overflow: visible !important;
+   display: flex;
+}
+.slick-center{
+   transform: scale(1.2);   
+   transition: all ease 350ms;   
+}
+.slick-center::before{
+   position: absolute;
+   
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   content: "";
+   display: inline-block;
+   border: 2px solid #b42126;
+   border-radius:35px;
+ 
+} 
+.slick-slide{
+   margin:0 2rem;
+}
+
+.prev_arrow{
+   position: absolute;
+   top:45%;
+   left: 38.8%;
+   z-index: 99; 
+
+   border:2px solid #e60012;   
+   border-radius: 50%;
+   padding: .5rem; 
+   background-color: #fff;   
+   line-height: 1.2; 
+   text-align: center;
+   transition: 250ms;
+   @media screen and (max-width:1200px) {      
+      left: 32%;
+   }
+   @media screen and (max-width:996px) {      
+      left: 0%;
+   }
+}
+.next_arrow{
+   position: absolute;
+   top:45%;
+   right:38.8%;
+   z-index: 99;
+   
+   border:2px solid #bd1717;   
+   border-radius: 50%;
+   padding: .5rem; 
+   background-color: #fff;   
+   line-height: 1.2; 
+   text-align: center;
+   transition: 250ms;
+   @media screen and (max-width:1200px) {      
+      right: 32%;
+   }
+   @media screen and (max-width:996px) {      
+      right: 0%;
+      
+   }
+}
+

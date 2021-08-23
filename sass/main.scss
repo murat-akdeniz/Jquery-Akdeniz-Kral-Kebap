@@ -1,0 +1,42 @@
+@use './topMenu';
+@use './slider';
+@use './menu-buttons';
+@use './contact-us';
+@use './rezervation';
+@import "../node_modules/bootstrap-scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+
+*, *::after, *::before {
+   box-sizing: border-box;
+ }
+
+body{
+  
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+   sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;  
+
+
+}
+/* 
+  bu kodlar sayesinde sliderdan kaynaklanan scrollbar ve
+  sliderın responsive yapılması çözüldü.
+*/
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+main{
+  
+}
+.map{
+  margin-top: 10vh;
+  
+}
+
+
+
+

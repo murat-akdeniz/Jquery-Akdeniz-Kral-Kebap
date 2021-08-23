@@ -1,0 +1,32 @@
+.rezervation{
+   margin-top: 2rem;
+   background: #E60012;   
+   height: 22vh;
+   padding: 1rem 0;
+   color:#fff;
+
+   &__content{
+      background:url('../img/motorbike.png');
+      background-repeat: no-repeat;  
+      background-position: 25% 50%; 
+      display: grid;
+      grid-template-columns: auto auto ;
+      grid-template-rows: auto auto;
+      row-gap: 10px;
+      column-gap: 25px;
+      justify-content: center;
+      .content__img{
+         text-align: center;
+         
+         
+         
+      }
+      .content__heading{
+         text-align: center;
+         font-size: 1.5rem;
+         
+      }
+   }
+
+
+}
