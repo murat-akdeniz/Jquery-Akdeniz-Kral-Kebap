@@ -1,32 +1,53 @@
 .rezervation{
    margin-top: 2rem;
    background: #E60012;   
-   height: 22vh;
    padding: 1rem 0;
-   color:#fff;
+   color:#E7E7E9;
 
    &__content{
-      background:url('../img/motorbike.png');
-      background-repeat: no-repeat;  
-      background-position: 25% 50%; 
       display: grid;
-      grid-template-columns: auto auto ;
-      grid-template-rows: auto auto;
+      /* 4 columuns 
+         2 rows
+      */
+      grid-template-areas: 'rezervasyon rezervasyon sosyal sosyal'
+                           'img phone takip takip';  
+      @media screen and(max-width:768px) {
+         grid-template-areas:'rezervasyon rezervasyon' 
+                              'img phone'
+                              'sosyal sosyal' 
+                              'takip takip';          
+      } 
+      /* row-gap: her satır arası boşluk 
+         column-gap: her sütun arası boşluk
+      */                        
       row-gap: 10px;
-      column-gap: 25px;
+      column-gap: 20px;
       justify-content: center;
+      .content__rezervasyon,.content__sosyal{
+         font-size: 1.3rem;
+         
+      }
       .content__img{
-         text-align: center;
-         
-         
-         
+         grid-area: img;         
+         text-align: center;                
       }
-      .content__heading{
-         text-align: center;
-         font-size: 1.5rem;
-         
+      .content__rezervasyon{
+         grid-area: rezervasyon;
+         text-align: center;         
       }
-   }
+      .content__sosyal{
+         grid-area: sosyal;
+         text-align: center;         
+      }
+      .content__phone{
+         grid-area: phone;
+         text-align: center; 
+                  
+      }
+      .content__takip{
+         grid-area: takip;
+      }
 
+   }
 
 }

@@ -1,6 +1,8 @@
 
 .slider{    
    position: relative;
+   
+   
    /* ekran 768 ve 996 arasında iken iki slider var.
       yani slick-center classı devre dışında kaldığı için 
       .slider classından önce border tanımladım.
@@ -21,15 +23,36 @@
    }
    &__items{
       padding:1.5rem; 
+      
  
       .menu-modern{         
          position: relative;
-         text-align: center;        
+         text-align: center;  
+         figure{
+            display: flex;
+            justify-content: center;
+            /* img lere sabit bir boyut verdim. 
+            responsive yapmak için zaten html classa img-fluid verdim
+            */
+            img{
+               width: 260px;
+               height: 195px; 
+    
+               @media screen and (max-width:576px) {    
+                  width: 100%;
+                  height: 100%;
+               }  
+            }
+            
+         }      
            
          .caption{
             h5{
                font-size: 1.5rem;
                font-weight: 600;
+               @media screen and (max-width:768px) {    
+                  font-size: 1.2rem;
+               } 
                a{
                   text-decoration: none;
                   color: #f60304;
@@ -40,6 +63,9 @@
                font-weight: 600;
                margin:0;
                padding-bottom: 1rem;
+               @media screen and (max-width:768px) {    
+                  font-size: 1.2rem;
+               } 
                
             }
             //tl işareti koyar.
@@ -69,6 +95,11 @@
                border-width: 2px;
                padding: 10px 28px;
                cursor: pointer;
+
+               @media screen and (max-width:768px) {    
+                  font-size: 1.1rem;
+                  padding: 5px 20indepx;
+               } 
                
                &:hover {
                   color: #fff;
@@ -76,17 +107,11 @@
                   transition: all .5s ease-in-out;               
                }
             
-         }
+            }
             
-      }
+         }
       
-     /* img lere sabit bir boyut verdim. 
-        responsive yapmak için zaten html classa img-fluid verdim
-       */
-      img{
-         width: 260px;
-         height: 195px;         
-      }
+
       }   
    }
 }
@@ -105,6 +130,7 @@
 .slick-center{
    transform: scale(1.2);   
    transition: all ease 350ms;   
+   
 }
 
 .slick-center::before{
@@ -126,14 +152,11 @@
 
 .slick-slide{
    margin:0 2rem;
+   
    /* 996 px altında iken img leri ortalamak için */
    @media screen and (max-width:996px) {
       margin:0;   
-      figure{
-         display: flex;
-         justify-content: center;
-         
-      }
+
    }
 }
 
@@ -150,11 +173,18 @@
    line-height: 1.2; 
    text-align: center;
    transition: 250ms;
+   @media screen and (max-width:1600px) {      
+      left: 31%;
+   }
    @media screen and (max-width:1200px) {      
       left: 32%;
    }
    @media screen and (max-width:996px) {      
       left: 0%;
+   }
+   @media screen and (max-width:576px) {  
+         
+      top: 28%;
    }
 }
 .next_arrow{
@@ -162,7 +192,6 @@
    top:45%;
    right:38.8%;
    z-index: 99;
-   
    border:2px solid #bd1717;   
    border-radius: 50%;
    padding: .5rem; 
@@ -170,6 +199,9 @@
    line-height: 1.2; 
    text-align: center;
    transition: 250ms;
+   @media screen and (max-width:1600px) {      
+      right: 31%;
+   }
    @media screen and (max-width:1200px) {      
       right: 32%;
    }
@@ -177,14 +209,12 @@
       right: 0%;
       
    }
-}
-//sliderlarımı screen 576px olduğunda görünmez yaptım
-@media screen and (max-width:576px) {      
-   #section-slider{
-      display: none;
+   @media screen and (max-width:576px) {      
+      top: 28%;
+
    }
-   
 }
+
 
 
 

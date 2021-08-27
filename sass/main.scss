@@ -20,6 +20,7 @@ body{
  -moz-osx-font-smoothing: grayscale;  
 
 
+
 }
 /* 
   bu kodlar sayesinde sliderdan kaynaklanan scrollbar ve
@@ -28,13 +29,15 @@ body{
 html,body{
   max-width: 100%;
   overflow-x: hidden;
+  margin: 0;
 }
 
 .map{
-  margin-top: 10vh;
-  
+  margin-top: 10vh;  
 }
-
+.footer-menu{
+  margin-top: 2rem;
+}
 
 
 

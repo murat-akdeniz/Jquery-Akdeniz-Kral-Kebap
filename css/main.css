@@ -58,13 +58,32 @@
 .slider__items .menu-modern {
   position: relative;
   text-align: center;
+}
+.slider__items .menu-modern figure {
+  display: flex;
+  justify-content: center;
   /* img lere sabit bir boyut verdim. 
-     responsive yapmak için zaten html classa img-fluid verdim
-    */
+  responsive yapmak için zaten html classa img-fluid verdim
+  */
+}
+.slider__items .menu-modern figure img {
+  width: 260px;
+  height: 195px;
+}
+@media screen and (max-width: 576px) {
+  .slider__items .menu-modern figure img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .slider__items .menu-modern .caption h5, .slider__items .menu-modern .caption .h5 {
   font-size: 1.5rem;
   font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .slider__items .menu-modern .caption h5, .slider__items .menu-modern .caption .h5 {
+    font-size: 1.2rem;
+  }
 }
 .slider__items .menu-modern .caption h5 a, .slider__items .menu-modern .caption .h5 a {
   text-decoration: none;
@@ -75,6 +94,11 @@
   font-weight: 600;
   margin: 0;
   padding-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__items .menu-modern .caption .price {
+    font-size: 1.2rem;
+  }
 }
 .slider__items .menu-modern .caption .price::before {
   content: "₺";
@@ -104,14 +128,16 @@
   padding: 10px 28px;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .slider__items .menu-modern .caption .btnAll {
+    font-size: 1.1rem;
+    padding: 5px 20indepx;
+  }
+}
 .slider__items .menu-modern .caption .btnAll:hover {
   color: #fff;
   background-color: #8d0000;
   transition: all 0.5s ease-in-out;
-}
-.slider__items .menu-modern img {
-  width: 260px;
-  height: 195px;
 }
 
 /* uzun uğraşlar sonucunda slick-center divine verdiğim
@@ -158,10 +184,6 @@
   .slick-slide {
     margin: 0;
   }
-  .slick-slide figure {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 .prev_arrow {
@@ -177,6 +199,11 @@
   text-align: center;
   transition: 250ms;
 }
+@media screen and (max-width: 1600px) {
+  .prev_arrow {
+    left: 31%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .prev_arrow {
     left: 32%;
@@ -185,6 +212,11 @@
 @media screen and (max-width: 996px) {
   .prev_arrow {
     left: 0%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .prev_arrow {
+    top: 28%;
   }
 }
 
@@ -201,6 +233,11 @@
   text-align: center;
   transition: 250ms;
 }
+@media screen and (max-width: 1600px) {
+  .next_arrow {
+    right: 31%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .next_arrow {
     right: 32%;
@@ -211,30 +248,55 @@
     right: 0%;
   }
 }
-
 @media screen and (max-width: 576px) {
-  #section-slider {
-    display: none;
+  .next_arrow {
+    top: 28%;
   }
 }
+
 .menu-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 7rem 0;
+  height: auto;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
 }
-.menu-buttons .btn-menu {
+.menu-buttons #tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu-buttons #tabs .btn-menu a {
   background-color: #000;
-  width: 120px;
-  height: 45px;
+  width: 125px;
+  height: 50px;
+  padding: 0.5rem;
   font-size: 1.2rem;
   font-weight: 400;
   color: #fff;
   cursor: pointer;
   text-align: center;
   border: 2px solid #fff;
-  border-radius: 50px;
-  margin-right: 1.2rem;
+  border-radius: 35px;
+  margin: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.menu-buttons #tabs .btn-menu a:hover {
+  color: #fff;
+}
+.menu-buttons #tabs .btn-menu a.active {
+  background: #1c1b1b;
+  background: linear-gradient(180deg, #1c1b1b 0%, rgba(37, 34, 32, 0.2833508403) 51%, #322021 100%);
+  color: #ff0d0d;
+  font-weight: 600;
+  transform: scale(1.1);
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 11px 11px -2px #000000;
+  box-shadow: 0px 11px 11px -2px #000000;
+  text-shadow: rgba(235, 227, 227, 0.5) 0 0 10px, rgba(253, 253, 253, 0.5) 0 0 10px;
 }
 
 .text-orange {
@@ -272,27 +334,48 @@
 .rezervation {
   margin-top: 2rem;
   background: #E60012;
-  height: 22vh;
   padding: 1rem 0;
-  color: #fff;
+  color: #E7E7E9;
 }
 .rezervation__content {
-  background: url("../img/motorbike.png");
-  background-repeat: no-repeat;
-  background-position: 25% 50%;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  /* 4 columuns 
+     2 rows
+  */
+  grid-template-areas: "rezervasyon rezervasyon sosyal sosyal" "img phone takip takip";
+  /* row-gap: her satır arası boşluk 
+     column-gap: her sütun arası boşluk
+  */
   row-gap: 10px;
-  column-gap: 25px;
+  column-gap: 20px;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .rezervation__content {
+    grid-template-areas: "rezervasyon rezervasyon" "img phone" "sosyal sosyal" "takip takip";
+  }
+}
+.rezervation__content .content__rezervasyon, .rezervation__content .content__sosyal {
+  font-size: 1.3rem;
+}
 .rezervation__content .content__img {
+  grid-area: img;
   text-align: center;
 }
-.rezervation__content .content__heading {
+.rezervation__content .content__rezervasyon {
+  grid-area: rezervasyon;
   text-align: center;
-  font-size: 1.5rem;
+}
+.rezervation__content .content__sosyal {
+  grid-area: sosyal;
+  text-align: center;
+}
+.rezervation__content .content__phone {
+  grid-area: phone;
+  text-align: center;
+}
+.rezervation__content .content__takip {
+  grid-area: takip;
 }
 
 :root {
@@ -11419,10 +11502,15 @@ body {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  margin: 0;
 }
 
 .map {
   margin-top: 10vh;
+}
+
+.footer-menu {
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

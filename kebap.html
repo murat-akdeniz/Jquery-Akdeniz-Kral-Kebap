@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <nav class="topMenu container-fluid">
+         <ul>
+            <a href="">MENU</a>
+            <a href="">HAKKIMIZDA</a>
+            <a href="index.html" class="logo">
+               <img src="./img/logo/logo.png" alt="akdeniz-kral-kebap" class="img-fluid">
+            </a>
+            <a href="">GALERİ</a>
+            <a href="">İLETİŞİM</a>
+         </ul>
+      </nav>
+      <section class="container-fluid menu-buttons">
+
+         <ul style="margin-bottom: 5rem;" id="tabs">
+            <li class="btn-menu"><a id='tab1'>KEBAP</a></li>
+            <li class="btn-menu"><a id='tab2'>LAHMACUN</a></li>
+            <li class="btn-menu"><a id='tab3'>PİDE</a></li>
+            <li class="btn-menu"><a id='tab4'>İÇECEKLER</a></li>
+            <li class="btn-menu"><a id='tab5'>TATLILAR</a></li>
+            <li class="btn-menu"><a id='tab6'>SALATALAR</a></li>
+         </ul>
+
+         <div id="tab1C" class="tab-slider">
+            <!-- SLIDER KEBAP-->
+            <section class="slider">
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/kebaplar/adana.jpg" alt="adana" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">ADANA <br />(Acılı Kebap)</a></h5>
+                        <p class="price">
+                           45
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/kebaplar/ciger-sis-kebap.jpg" alt="adana" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">CİĞER ŞİŞ <br />(Dana)</a></h5>
+                        <p class="text-italic">Dana ciğer kuşbaşı şeklinde kesilip özel baharatlarla harmanlandıktan
+                           sonra
+                           kuyruk yağıyla ince şişlere takılır ve garnitürü...</p>
+                        <p class="price">45</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/kebaplar/urfa.jpg" alt="urfa" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">URFA <br />(Acısız Kebap)</a></h5>
+                        <p class="price">45</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/kebaplar/beyti-sarma.jpg" alt="adana" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">Beyti-Sarma</a></h5>
+                        <p class="text-italic">Kebabı acısız olup hafif sarımsaklıdır. Kebap piştikten sonra lavaşa
+                           sarılıp
+                           dilimlenir. Sonra üzerine domates sosu, tereyağı ve kaş...</p>
+                        <p class="price">60</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/kebaplar/tepsi-kebap.jpg" alt="tepsi kebap" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">TEPSİ KEBAP</a></h5>
+                        <p class="price">80</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/kebaplar/zırh-kebap.jpg" alt="zırh kebap" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">ZIRH KEBAP</a></h5>
+                        <p class="price">80</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/kebaplar/kuzu-pirzola.jpg" alt="kuzu pirzola" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">KUZU PİRZOLA</a></h5>
+                        <p class="price">75</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/kebaplar/iskender.jpg" alt="adana" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">İSKENDER</a></h5>
+                        <p class="text-italic">Bizde iskender "KEBAPTAN" yapılır. İsteğe göre acılı veya acısız kebap
+                           tercih edilebilir. Özel dilimlenmiş ve ıslatılmış....</p>
+                        <p class="price">60</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+            </section>
+            <!-- SLİDER KEBAP BİTTİ -->
+         </div>
+
+         <div id="tab2C" class="tab-slider">
+            <!-- SLIDER LAHMACUN-->
+            <section class="slider">
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/lahmacunlar/antep-lahmacun.jpg" alt="lahmacun" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">ANTEP LAHMACUN</a></h5>
+                        <p class="price">15</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/lahmacunlar/lahmacun.jpg" alt="lahmacun" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">LAHMACUN</a></h5>
+                        <p class="price">9</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/lahmacunlar/findik-lahmacun.jpg" alt="lahmacun" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">FINDIK LAHMACUN</a></h5>
+                        <p class="price">6</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- SLİDER LAHMACUN BİTTİ -->
+         </div>
+
+         <div id="tab3C" class="tab-slider">
+            <!-- SLIDER PİDE -->
+            <section class="slider">
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/karisik-pide.jpg" alt="karışık pide" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">KARIŞIK</a></h5>
+                        <p class="price">
+                           25
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/kasarli-mantarli.jpg" alt="kaşarlı mantarlı"
+                           class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">KAŞARLI MANTARLI</a></h5>
+                        <p class="price">15</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/kasarli-sucuklu.jpg" alt="kaşarlı sucuklu"
+                           class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">KAŞARLI SUCUKLU</a></h5>
+                        <p class="price">25</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/kasarli.jpg" alt="kaşarlı" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">KAŞARLI</a></h5>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/kavurmali-kasarli.jpg" alt="kavurmali kaşarlı"
+                           class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">KAVURMALI KAŞARLI</a></h5>
+                        <p class="price">30</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/kavurmali.jpg" alt="kavurmalı" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">KAVURMALI</a></h5>
+                        <p class="price">30</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/kiymali-kasarli.jpg" alt="kıymalı kaşarlı"
+                           class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">KIYMALI KAŞARLI (Badem)</a></h5>
+                        <p class="price">25</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/kiymali.jpg" alt="kıymalı" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">KIYMALI</a></h5>
+                        <p class="price">20</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/kusbasi-kasarli.jpg" alt="kuşbaşılı kaşarlı"
+                           class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">KUŞBAŞILI KAŞARLI (Lokum)</a></h5>
+                        <p class="price">30</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/kusbasili-pide.jpg" alt="kuşbaşılı" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">KUŞBAŞILI</a></h5>
+                        <p class="price">30</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/pideler/super-karisik-pide.jpg" alt="süper karışık"
+                           class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">SÜPER KARIŞIK</a></h5>
+                        <p class="price">35</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+            </section>
+            <!-- SLİDER PİDE BİTTİ -->
+         </div>
+
+         <div id="tab4C" class="tab-slider">
+            <!-- SLIDER İÇECEKLER -->
+            <section class="slider">
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/icecekler/cay-ikrami.jpg" alt="çay" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="#!">ÇAY İKRAMI</a></h5>
+                        <p></p>
+                        <a href="#!" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/icecekler/icecekler.jpg" alt="kola" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="#!">KOLA</a></h5>
+                        <p class="price">8</p>
+                        <a href="#!" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/icecekler/icecekler.jpg" alt="kola" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="#!">AYRAN</a></h5>
+                        <p class="price">8</p>
+                        <a href="#!" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/icecekler/icecekler.jpg" alt="kola" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="#!">FANTA</a></h5>
+                        <p class="price">8</p>
+                        <a href="#!" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/icecekler/icecekler.jpg" alt="kola" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="#!">MEYVE SUYU</a></h5>
+                        <p class="price">8</p>
+                        <a href="#!" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+            </section>
+            <!-- SLİDER İÇECEKLER BİTTİ -->
+         </div>
+
+         <div id="tab5C" class="tab-slider">
+            <!-- SLIDER TATLILAR-->
+            <section class="slider">
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/tatilar/findikli-sutlac.jpg" alt="sütlaç" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">FINDIKLI SÜTLAÇ</a></h5>
+                        <p class="price">
+                           15
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/tatilar/fistikli-sutlac.jpg" alt="sütlaç" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">FISTIKLI SÜTLAÇ</a></h5>
+                        <p class="price">
+                           15
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/tatilar/fistik-durum.jpg" alt="fıstıklı dürüm" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">FISTIKLI DÜRÜM</a></h5>
+                        <p class="price">
+                           15
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/tatilar/fistikli-baklava.jpg" alt="sütlaç" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">FISTIKLI BAKLAVA</a></h5>
+                        <p class="price">
+                           15
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/tatilar/kunefe.jpg" alt="künefe" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">KÜNEFE</a></h5>
+                        <p class="price">
+                           15
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/tatilar/fistikli-tel-kadayif.jpg" alt="sütlaç" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">FISTIKLI TEL KADAYIF</a></h5>
+                        <p class="price">
+                           15
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/tatilar/kabak-tatlisi-sade.jpg" alt="sütlaç" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">KABAK TATLISI (SADE)</a></h5>
+                        <p class="price">
+                           15
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/tatilar/kabak-tatlisi.jpg" alt="sütlaç" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">KABAK TATLISI (TAHİNLİ)</a></h5>
+                        <p class="price">
+                           15
+                        </p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+
+            </section>
+            <!-- SLİDER TATLILAR BİTTİ -->
+         </div>
+
+         <div id="tab6C" class="tab-slider">
+            <!-- SLIDER SALATALAR -->
+            <section class="slider">
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/salatalar/ikramlar.jpg" alt="ikramlar" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">İKRAMLAR</h5>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/salatalar/cig-kofte.jpg" alt="adana" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">ÇİĞ KÖFTE</a></h5>
+                        <p class="price">15</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/salatalar/coban-salatasi.jpg" alt="adana" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">ÇOBAN SALATASI</a></h5>
+                        <p class="price">15</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/salatalar/ezme.jpg" alt="adana" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">EZME</a></h5>
+                        <p class="price">5</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/salatalar/gavurdagi-salatasi.jpg" alt="adana" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">GAVUR DAĞI SALATASI</a></h5>
+                        <p class="price">15</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/salatalar/haydari.jpg" alt="adana" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">HAYDARİ</a></h5>
+                        <p class="price">5</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/salatalar/mevsim-salatasi.jpg" alt="adana" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">MEVSİM SALATASI</a></h5>
+                        <p class="price">15</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/salatalar/patlicanli-meze.jpg" alt="adana" class="img-fluid" />
+                     </figure>
+                     <div class="caption">
+                        <h5><a href="http://">PATLICANLI MEZE</a></h5>
+                        <p class="price">15</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="slider__items">
+                  <div class="menu-modern">
+                     <figure><img data-lazy="./img/salatalar/yogurt.jpg" alt="adana" class="img-fluid" /></figure>
+                     <div class="caption">
+                        <h5><a href="http://">YOĞURT</a></h5>
+                        <p class="price">15</p>
+                        <a href="http://" class="btnAll">Tümünü Gör</a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- SLİDER SALATALAR BİTTİ -->
+         </div>
+
+      </section>
+      <main class="main">
+         <!-- CONTACT BAŞLADI -->
+         <section class="contact white-bg page-section-ptb">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12 mt-5">
+                     <div class="section-title text-center">
+                        <div class="title-separator">
+                           <img src="./img/icons/salad.svg" alt="salata" width="300px" height="300px">
+                        </div>
+                        <h2 class="text-brand"> <span class="text-orange">AKDENİZ KRAL KEBAP </span> </h2>
+                        <p class="text-definiton">Tadı damağınızda kalacak eşsiz lezzetler</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                     <div class="contact-box text-center">
+                        <img src="./img/icons/marker.svg" alt="marker">
+                        <h5>Adres</h5>
+                        <p>Kuzguncuk Mah. Düzgün Sok. No: 23
+                           <br> Beykoz / İstanbul
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                     <div class="contact-box text-center">
+                        <img src="./img/icons/phone-call-icon.svg" alt="phone" width="48px" height="48px">
+                        <h5>Telefon</h5>
+                        <p> 0 216 221 39 91</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                     <div class="contact-box text-center">
+                        <img src="./img/icons/email.svg" alt="email" width="48px" height="48px">
+                        <h5>Email</h5>
+                        <p> akdenizkebap@gmail.com</p>
+                     </div>
+                  </div>
+
+               </div>
+
+            </div>
+         </section>
+
+         <section class="container-fluid map">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9553.133047950976!2d29.054472266913326!3d41.046072541593304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac9d37680e909%3A0xcf963efd888a5df2!2zVGFyaWhpIMOHxLFuYXJhbHTEsQ!5e0!3m2!1str!2str!4v1629560038291!5m2!1str!2str"
+               width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </section>
+         <section class="rezervation container-fluid">
+            <div class="rezervation__content content">
+               <div class="content__img">
+                  <img src="./img/motorbike.png" alt="kurye">
+               </div>
+
+               <div class="content__rezervasyon">
+                  <span>REZERVASYON & PAKET SERVİS</span>
+               </div>
+               <div class="content__sosyal">
+                  <span>SOSYAL MEDYA</span>
+               </div>
+               <div class="content__phone">
+                  <div>
+                     <span><strong>0 216 279 17 47</strong></span><br>
+                     <span>size bir telefon kadar yakınız!</span>
+                  </div>
+               </div>
+               <div style="text-align: center;" class="content__takip">
+                  <div class="mb-2"><span>Facebook ve Instagram hesaplarımızdan<br> bizi takip edebilirsiniz</span>
+                  </div>
+                  <div>
+                     <img src="./img/icons/facebook.png" alt="facebook" width="36px" height="36px"
+                        style="margin-right: .5rem;">
+                     <img src="./img/icons/instagram.png" alt="instagram" width="36px" height="36px">
+                     <img src="./img/sosyalmedya-bg.png" alt="sosyal medya" style="margin-left: 1rem;">
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <div class="footer-menu">
+         <nav class="topMenu container-fluid">
+            <ul>
+               <a href="">MENU</a>
+               <a href="">HAKKIMIZDA</a>
+               <a href="">GALERİ</a>
+               <a href="">İLETİŞİM</a>
+            </ul>
+         </nav>
+      </div>
+      <footer>Her hakkı saklıdır 2021 © AKDENİZ KRAL KEBAP</footer>
+
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="./js/slickSlider.js"></script>
+
+
+</body>
+
+</html>
