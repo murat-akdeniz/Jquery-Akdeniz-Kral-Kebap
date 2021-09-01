@@ -1,29 +1,101 @@
-$base_color:#e60012  !default;
+@import '../abstracts/variables';
+
 .topMenu{
-   background-color: $base_color;
-   height: 60px;
+   background-color: $base_color;   
    display: flex;
-   justify-content: center;
+   flex-flow: column nowrap;
+   justify-content: flex-start;
    align-items: center;
-   ul{  
+   color: #181616;   
+   .svg{
+      img{
+         width: 1920px;
+         @media screen and (max-width:996px) {
+            width: 997px;
+         }
+         @media screen and (max-width:768px) {
+            width: 760px;
+         }
+      }     
+   }
+
+   .logo-toggle{
+      display: none;
+      @media screen and(max-width:768px){
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+         
+         img{
+            width: 150px;
+            height: 150px;
+         }                 
+         .my-logo{
+            text-decoration: none;
+            color: #fff;            
+            h3{
+               margin: 0;
+               font-size: 1.3rem;               
+               font-weight: 600;               
+            }
+         }
+      }  
+   }
+   .menu{  
       display: flex;
-      flex-direction: column nowrap;
+      flex-flow: row wrap;
       justify-content: center;
-      align-items: center;    
-      a{
+      align-items: center;  
+      margin: 0;
+      &.menu-toggle{
+         transform: translateX(0%);
+      } 
+      @media screen and(max-width:768px){
+         flex-flow: column nowrap;
+         justify-content: flex-start;               
+         position: fixed;
+         top:0;
+         right: 0;
+         height: 100vh;
+         width: 300px;
+         padding-top: 3.5rem;
+         padding-left: 1rem;
+         transition: all 0.5s ease-in-out;   
+         transform: translateX(100%);
+         background: #000;        
+         z-index: 9999;
+         padding-top: 20vh;
+      } 
+      a{        
          text-decoration: none;
          color:#fff;
-         margin-right: 2rem;         
+         margin-right: 2rem;  
+         font-weight: 600;
+         &:hover{
+            color: #000;
+         }
+         @media screen and (max-width:768px) {
+            margin-bottom: 2rem;
+            &:hover{
+               color: #5296fc;
+            }
+         }       
       }
+
       .logo{
-         display: block;
+
          width: 200px;
          height: 200px;   
          z-index: 1; 
-         margin-top: 5rem; 
+         
+         
+         @media screen and(max-width:768px){
+            display: none;
+         }  
             
       }
 
    }
+
 
 }

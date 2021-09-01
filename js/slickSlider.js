@@ -43,6 +43,24 @@ $(document).ready(() => {
       ]
 
    });
+   //images preloading
+   function preLoad(arr) {
+      $(arr).each(function () {
+         $('<img/>')[0].src = this;
+         console.log($('<img/>')[0].src)
+
+      })
+   }
+   preLoad([
+      'img/kebaplar/adana.jpg',
+      'img/kebaplar/beyti-sarma.jpg',
+      'img/kebaplar/ciger-sis-kebap.jpg',
+      'img/kebaplar/iskender.jpg',
+      'img/kebaplar/kuzu-pirzola.jpg',
+      'img/kebaplar/tepsi-kebap.jpg',
+      'img/kebaplar/urfa.jpg',
+      'img/kebaplar/zirh-kebap.jpg',
+   ]);
 
 
 

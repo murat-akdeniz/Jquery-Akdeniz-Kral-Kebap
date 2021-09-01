@@ -1,8 +1,11 @@
+
 @use './topMenu';
 @use './slider';
 @use './menu-buttons';
 @use './contact-us';
 @use './rezervation';
+@use './toggleBtn';
+@use './footer';
 @import "../node_modules/bootstrap-scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
@@ -18,7 +21,6 @@ body{
    sans-serif;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;  
-
 
 
 }
