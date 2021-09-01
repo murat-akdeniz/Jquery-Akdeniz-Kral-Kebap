@@ -131,7 +131,7 @@
 @media screen and (max-width: 768px) {
   .slider__items .menu-modern .caption .btnAll {
     font-size: 1.1rem;
-    padding: 5px 20indepx;
+    padding: 5px 20px;
   }
 }
 .slider__items .menu-modern .caption .btnAll:hover {
@@ -376,6 +376,15 @@
 }
 .rezervation__content .content__takip {
   grid-area: takip;
+}
+
+.topMenu .toggle-btn {
+  background: yellow;
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
 }
 
 :root {

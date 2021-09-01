@@ -14,9 +14,22 @@
 
 <body>
    <div class="wrapper">
-      <nav class="topMenu container-fluid">
+      <nav class="topMenu">
 
-         <ul>
+         <div class="logo-toggle">
+            <a href="">
+               <img src="./img/logo/akdeniz-logo-mini.png" alt="akdeniz kebap">
+            </a>
+         </div>
+
+
+         <div class="burger">
+            <div class="toggle-btn"></div>
+            <div class="toggle-btn"></div>
+            <div class="toggle-btn"></div>
+         </div>
+
+         <ul class="menu">
             <a href="">MENU</a>
             <a href="">HAKKIMIZDA</a>
             <a href="index.html" class="logo">
@@ -25,6 +38,10 @@
             <a href="">GALERİ</a>
             <a href="">İLETİŞİM</a>
          </ul>
+
+         <div class="svg">
+            <img src="./img/icons/wave.svg" alt="">
+         </div>
       </nav>
       <section class="container-fluid menu-buttons">
 
@@ -43,7 +60,7 @@
 
                <div class="slider__items">
                   <div class="menu-modern">
-                     <figure><img data-lazy="./img/kebaplar/adana.jpg" alt="adana" class="img-fluid" /></figure>
+                     <figure><img src="./img/kebaplar/adana.jpg" alt="adana" class="img-fluid" /></figure>
                      <div class="caption">
                         <h5><a href="http://">ADANA <br />(Acılı Kebap)</a></h5>
                         <p class="price">
@@ -55,7 +72,7 @@
                </div>
                <div class="slider__items">
                   <div class="menu-modern">
-                     <figure><img data-lazy="./img/kebaplar/ciger-sis-kebap.jpg" alt="adana" class="img-fluid" />
+                     <figure><img src="./img/kebaplar/ciger-sis-kebap.jpg" alt="adana" class="img-fluid" />
                      </figure>
                      <div class="caption">
                         <h5><a href="http://">CİĞER ŞİŞ <br />(Dana)</a></h5>
@@ -70,7 +87,7 @@
 
                <div class="slider__items">
                   <div class="menu-modern">
-                     <figure><img data-lazy="./img/kebaplar/urfa.jpg" alt="urfa" class="img-fluid" /></figure>
+                     <figure><img src="./img/kebaplar/urfa.jpg" alt="urfa" class="img-fluid" /></figure>
                      <div class="caption">
                         <h5><a href="http://">URFA <br />(Acısız Kebap)</a></h5>
                         <p class="price">45</p>
@@ -80,7 +97,7 @@
                </div>
                <div class="slider__items">
                   <div class="menu-modern">
-                     <figure><img data-lazy="./img/kebaplar/beyti-sarma.jpg" alt="adana" class="img-fluid" /></figure>
+                     <figure><img src="./img/kebaplar/beyti-sarma.jpg" alt="adana" class="img-fluid" /></figure>
                      <div class="caption">
                         <h5><a href="http://">Beyti-Sarma</a></h5>
                         <p class="text-italic">Kebabı acısız olup hafif sarımsaklıdır. Kebap piştikten sonra lavaşa
@@ -94,7 +111,7 @@
 
                <div class="slider__items">
                   <div class="menu-modern">
-                     <figure><img data-lazy="./img/kebaplar/tepsi-kebap.jpg" alt="tepsi kebap" class="img-fluid" />
+                     <figure><img src="./img/kebaplar/tepsi-kebap.jpg" alt="tepsi kebap" class="img-fluid" />
                      </figure>
                      <div class="caption">
                         <h5><a href="http://">TEPSİ KEBAP</a></h5>
@@ -106,7 +123,7 @@
 
                <div class="slider__items">
                   <div class="menu-modern">
-                     <figure><img data-lazy="./img/kebaplar/zırh-kebap.jpg" alt="zırh kebap" class="img-fluid" />
+                     <figure><img src="./img/kebaplar/zirh-kebap.jpg" alt="zırh kebap" class="img-fluid" />
                      </figure>
                      <div class="caption">
                         <h5><a href="http://">ZIRH KEBAP</a></h5>
@@ -118,7 +135,7 @@
 
                <div class="slider__items">
                   <div class="menu-modern">
-                     <figure><img data-lazy="./img/kebaplar/kuzu-pirzola.jpg" alt="kuzu pirzola" class="img-fluid" />
+                     <figure><img src="./img/kebaplar/kuzu-pirzola.jpg" alt="kuzu pirzola" class="img-fluid" />
                      </figure>
                      <div class="caption">
                         <h5><a href="http://">KUZU PİRZOLA</a></h5>
@@ -129,7 +146,7 @@
                </div>
                <div class="slider__items">
                   <div class="menu-modern">
-                     <figure><img data-lazy="./img/kebaplar/iskender.jpg" alt="adana" class="img-fluid" /></figure>
+                     <figure><img src="./img/kebaplar/iskender.jpg" alt="adana" class="img-fluid" /></figure>
                      <div class="caption">
                         <h5><a href="http://">İSKENDER</a></h5>
                         <p class="text-italic">Bizde iskender "KEBAPTAN" yapılır. İsteğe göre acılı veya acısız kebap
@@ -229,17 +246,19 @@
             </div>
          </section>
       </main>
-      <div class="footer-menu">
-         <nav class="topMenu container-fluid">
-            <ul>
-               <a href="">MENU</a>
-               <a href="">HAKKIMIZDA</a>
-               <a href="">GALERİ</a>
-               <a href="">İLETİŞİM</a>
-            </ul>
-         </nav>
-      </div>
-      <footer>Her hakkı saklıdır 2021 © AKDENİZ KRAL KEBAP</footer>
+
+      <nav class="footer-menu container-fluid">
+         <ul>
+            <a href="">MENU&nbsp;&nbsp;|</a>
+            <a href="">&nbsp;&nbsp;HAKKIMIZDA&nbsp;&nbsp;|</a>
+            <a href="">&nbsp;&nbsp;GALERİ&nbsp;&nbsp;|</a>
+            <a href="">&nbsp;&nbsp;İLETİŞİM</a>
+         </ul>
+      </nav>
+
+      <footer class="footer">
+         <span>Her hakkı saklıdır 2021 © AKDENİZ KRAL KEBAP</span>
+      </footer>
 
    </div>
 
@@ -247,6 +266,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
    <script src="./js/slickSlider.js"></script>
+   <script src="./js/toggleBtn.js"></script>
 
 
 </body>
