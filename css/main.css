@@ -358,7 +358,8 @@
   display: inline-block;
 }
 .menu-buttons #tabs .btn-menu a:hover {
-  color: #fff;
+  transition: all 0.5s ease-in-out;
+  background-color: #e60012;
 }
 .menu-buttons #tabs .btn-menu a.active {
   background: #1c1b1b;

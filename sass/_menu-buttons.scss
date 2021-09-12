@@ -1,4 +1,4 @@
-
+@import '../abstracts/variables';
 .menu-buttons{
    height: auto;
    
@@ -28,7 +28,8 @@
       text-decoration: none;
       display: inline-block;
       &:hover{
-        color: #fff;
+        transition: all .5s ease-in-out;
+        background-color: $base_color;
       }
       
     }

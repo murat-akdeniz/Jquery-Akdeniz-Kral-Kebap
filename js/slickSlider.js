@@ -47,7 +47,6 @@ $(document).ready(() => {
    function preLoad(arr) {
       $(arr).each(function () {
          $('<img/>')[0].src = this;
-         console.log($('<img/>')[0].src)
 
       })
    }
