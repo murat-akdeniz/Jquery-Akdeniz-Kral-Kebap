@@ -50,13 +50,11 @@
             h5{
                font-size: 1.5rem;
                font-weight: 600;
+               color: #f60304;
                @media screen and (max-width:768px) {    
                   font-size: 1.2rem;
                } 
-               a{
-                  text-decoration: none;
-                  color: #f60304;
-               }
+    
             }
             .price{
                font-size: 1.3rem;

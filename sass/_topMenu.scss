@@ -71,6 +71,7 @@
          color:#fff;
          margin-right: 2rem;  
          font-weight: 600;
+         transition: all .5s ease-in-out;
          &:hover{
             color: #000;
          }
@@ -80,6 +81,13 @@
                color: #5296fc;
             }
          }       
+      }
+      .active{
+         color:#000;
+         font-size: 1.2rem;  
+         @media screen and (max-width:768px) {
+            color: #5296fc;
+         }         
       }
 
       .logo{

@@ -83,6 +83,7 @@
   color: #fff;
   margin-right: 2rem;
   font-weight: 600;
+  transition: all 0.5s ease-in-out;
 }
 .topMenu .menu a:hover {
   color: #000;
@@ -92,6 +93,15 @@
     margin-bottom: 2rem;
   }
   .topMenu .menu a:hover {
+    color: #5296fc;
+  }
+}
+.topMenu .menu .active {
+  color: #000;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .topMenu .menu .active {
     color: #5296fc;
   }
 }
@@ -153,15 +163,12 @@
 .slider__items .menu-modern .caption h5, .slider__items .menu-modern .caption .h5 {
   font-size: 1.5rem;
   font-weight: 600;
+  color: #f60304;
 }
 @media screen and (max-width: 768px) {
   .slider__items .menu-modern .caption h5, .slider__items .menu-modern .caption .h5 {
     font-size: 1.2rem;
   }
-}
-.slider__items .menu-modern .caption h5 a, .slider__items .menu-modern .caption .h5 a {
-  text-decoration: none;
-  color: #f60304;
 }
 .slider__items .menu-modern .caption .price {
   font-size: 1.3rem;
@@ -513,6 +520,305 @@
   text-align: center;
   color: #000;
   padding: 1rem;
+}
+
+.menu-line {
+  background: #212529;
+  height: 5px;
+  margin-bottom: 1rem;
+}
+
+.menu-line2 {
+  background: #000000;
+  height: 2px;
+  margin: 1rem;
+}
+
+.menu-baslik {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  color: #F50101;
+}
+.menu-baslik a {
+  text-decoration: none;
+  color: #212529;
+  background-color: #D6D6D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.menu-baslik a:hover {
+  color: #F50101;
+}
+
+.baslik {
+  padding-left: 1rem;
+}
+.baslik a {
+  text-decoration: none;
+  color: #212529;
+}
+.baslik a:hover {
+  color: #F50101;
+}
+
+.urun-baslik-img {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.urun-baslik {
+  text-align: center;
+  color: #2C1809;
+  margin-bottom: 1rem;
+}
+
+.kebap-content {
+  margin: 5vh 0;
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 1200px) {
+  .galeri {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 996px) {
+  .galeri {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.galeri__items .menu-modern {
+  border: 4px solid #2C1809;
+  border-radius: 5px;
+}
+.galeri__items .menu-modern .img-link:hover img {
+  transform: scale(0.9);
+}
+.galeri__items .menu-modern .img-link img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transition: all 0.8s ease-in-out;
+}
+.galeri__items .caption {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.galeri__items .caption h5, .galeri__items .caption .h5 {
+  margin: 0;
+}
+.galeri__items .caption .price {
+  color: #F50101;
+}
+
+.hizli-menu {
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media screen and (max-width: 767.33px) {
+  .hizli-menu {
+    display: none;
+  }
+}
+.hizli-menu .hizli-menu-item {
+  text-align: center;
+  background: url("../img/hizli_erisim_bg.png") no-repeat;
+  background-size: 100% 100%;
+  border-bottom: 2px solid #D8D8D8;
+}
+.hizli-menu .hizli-menu-item a {
+  display: inline-block;
+  width: 80%;
+  line-height: 40px;
+  color: #5f5d5d;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 40px;
+  transition: all 0.9s ease;
+  background: none;
+}
+.hizli-menu .hizli-menu-item a:hover {
+  background-color: #d1d1d1;
+}
+
+.menu-modern .img-link {
+  cursor: zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.urunler .menu-modern {
+  overflow: hidden;
+}
+.urunler .menu-modern a img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.9s ease-in-out;
+}
+.urunler .menu-modern a:hover img {
+  transform: scale(1.3);
+}
+.urunler .caption {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.urunler .caption a {
+  text-decoration: none;
+  color: #212529;
+  transition: all 0.3s ease-in-out;
+}
+.urunler .caption a:hover {
+  color: #F50101;
+}
+
+.hakkimizda-active {
+  color: #000;
+}
+
+.between {
+  height: 1rem;
+  background-color: #E60012;
+}
+
+.banner-img {
+  text-align: center;
+}
+
+.tarihce {
+  margin-left: 1rem;
+}
+.tarihce___baslik {
+  margin: 1rem 0;
+}
+
+.images figure {
+  text-align: center;
+}
+.images figure figcaption {
+  margin-top: 1rem;
+}
+
+.iletisim .iletisim-heading {
+  margin-left: 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #EBEBEB;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #EBEBEB;
+}
+.iletisim .iletisim-bilgileri {
+  margin: 1rem 0 1rem 2rem;
+}
+.iletisim .iletisim-bilgileri .content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.iletisim .iletisim-bilgileri .content img {
+  margin-right: 1rem;
+}
+.iletisim .iletisim-form {
+  margin-left: 2rem;
+}
+.iletisim .iletisim-form .error {
+  font-style: italic;
+}
+.iletisim .iletisim-form ::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.iletisim .iletisim-form .section {
+  margin-bottom: 1.5rem;
+}
+.iletisim .iletisim-form .smart-form {
+  position: relative;
+  width: 100%;
+}
+.iletisim .iletisim-form .form-giris {
+  border: 2px solid #ebebeb;
+  color: #fff;
+  background-color: #ee4c52;
+  height: 50px;
+  width: 100%;
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+  outline: 0;
+  transition: all 0.5s ease-in-out;
+}
+.iletisim .iletisim-form #form-message {
+  resize: none;
+  line-height: 1.2;
+  overflow: auto;
+  height: 120px;
+}
+.iletisim .iletisim-form .my-tooltip {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  left: -9999px;
+  width: 184px;
+  padding: 1rem;
+  margin-top: -20px;
+  color: black;
+  font-size: 12px;
+  background: #95080e;
+  color: #fff;
+  transition: margin 0.6s, opacity 0.6s;
+}
+.iletisim .iletisim-form .my-tooltip::after {
+  --arrow-size:15px;
+  transform: rotate(180deg);
+  top: 0;
+  margin-top: -30px;
+  margin-left: 15px;
+  left: 0;
+  content: "";
+  position: absolute;
+  border: var(--arrow-size) solid transparent;
+  border-top-color: #95080e;
+}
+.iletisim .iletisim-form .click-tooltip {
+  z-index: 1;
+  left: 0;
+  opacity: 1;
+  top: 100%;
+  margin-top: 15px;
 }
 
 :root {

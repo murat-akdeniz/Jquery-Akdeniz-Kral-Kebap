@@ -1,0 +1,30 @@
+.hakkimizda-active{
+   color:#000;
+}
+
+.between{
+   height: 1rem;
+   background-color: #E60012;
+}
+
+
+.banner-img{
+   text-align: center;
+}
+
+
+.tarihce{
+   margin-left: 1rem;
+   &___baslik{
+      margin: 1rem 0;
+   }
+}
+
+.images{
+   figure{
+      text-align: center;
+      figcaption{
+         margin-top: 1rem;
+      }
+   }
+}
