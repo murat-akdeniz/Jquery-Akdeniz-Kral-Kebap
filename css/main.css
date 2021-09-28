@@ -724,6 +724,17 @@
 .banner-img {
   text-align: center;
 }
+.banner-img img {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 996px) {
+  .banner-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 30vh;
+  }
+}
 
 .tarihce {
   margin-left: 1rem;
