@@ -3,7 +3,5 @@ $(document).ready(() => {
       $(this).toggleClass('on');
       $('.menu').toggleClass('menu-toggle');
    });
-   $('.anasayfa .logo').click(function (e) {
-      e.preventDefault();
-   })
+
 })

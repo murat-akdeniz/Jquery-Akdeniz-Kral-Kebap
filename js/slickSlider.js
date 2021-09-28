@@ -6,8 +6,8 @@ $(document).ready(() => {
       slidesToScroll: 1,
       centerMode: true,
       centerPadding: '0',
-      prevArrow: '<span class="prev_arrow"><img src="../img/icons/arrow-prev.svg" alt="arrow_prev"></span>',
-      nextArrow: '<span class="next_arrow"><img src="../img/icons/arrow-next.svg" alt="arrow_nex"></span>',
+      prevArrow: '<span class="prev_arrow"><img src="./img/icons/arrow-prev.svg" alt="arrow_prev"></span>',
+      nextArrow: '<span class="next_arrow"><img src="./img/icons/arrow-next.svg" alt="arrow_nex"></span>',
       responsive: [
          {
             breakpoint: 1600,
