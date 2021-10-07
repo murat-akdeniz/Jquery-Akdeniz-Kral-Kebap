@@ -1,8 +1,10 @@
 @import '../abstracts/variables';
 .menu-buttons{
-   height: auto;
-   
+   height: auto;   
    margin-bottom: 5rem;
+   @media screen and(max-width:576px) {
+     margin-bottom: 0;
+   }
    #tabs{
      display: flex;
      justify-content: center;
@@ -31,6 +33,12 @@
         transition: all .5s ease-in-out;
         background-color: $base_color;
       }
+      @media screen and (max-width:576px) {
+        width: 120px;
+        height: 45px;
+        font-size: 1rem;
+        
+      }
       
     }
     .btn-menu a.active{       
@@ -43,6 +51,9 @@
       -webkit-box-shadow: 0px 11px 11px -2px #000000; 
       box-shadow: 0px 11px 11px -2px #000000;
       text-shadow: rgba(235, 227, 227, 0.5) 0 0 10px, rgba(253, 253, 253, 0.5) 0 0 10px;
+      @media screen and (max-width:576px) {
+        transform: none;
+      }
     }
 
    }

@@ -72,11 +72,13 @@
     width: 300px;
     padding-top: 3.5rem;
     padding-left: 1rem;
-    transition: transform 0.6s ease-in-out;
     transform: translateX(100%);
-    background: #000;
+    background: #8d0000;
     z-index: 9999;
     padding-top: 20vh;
+  }
+  .topMenu .menu.menu-toggle {
+    transition: transform 0.6s ease-in-out;
   }
 }
 .topMenu .menu a {
@@ -94,7 +96,7 @@
     margin-bottom: 2rem;
   }
   .topMenu .menu a:hover {
-    color: #5296fc;
+    color: #f8db7d;
   }
 }
 .topMenu .menu .active {
@@ -103,7 +105,7 @@
 }
 @media screen and (max-width: 768px) {
   .topMenu .menu .active {
-    color: #5296fc;
+    color: #f8db7d;
   }
 }
 .topMenu .menu .logo {
@@ -189,6 +191,7 @@
   font-size: 1rem;
   font-style: italic;
   font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
   /* paragraf küçük boyutlarda kutunun borderından
      dışarı taşmaması için padding right ve left kullandım.
   */
@@ -196,6 +199,11 @@
 @media screen and (max-width: 768px) {
   .slider__items .menu-modern .caption .text-italic {
     padding: 0 5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .slider__items .menu-modern .caption .text-italic {
+    padding: 0;
   }
 }
 .slider__items .menu-modern .caption .btnAll {
@@ -340,6 +348,11 @@
   height: auto;
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 576px) {
+  .menu-buttons {
+    margin-bottom: 0;
+  }
+}
 .menu-buttons #tabs {
   display: flex;
   justify-content: center;
@@ -369,6 +382,13 @@
   transition: all 0.5s ease-in-out;
   background-color: #e60012;
 }
+@media screen and (max-width: 576px) {
+  .menu-buttons #tabs .btn-menu a {
+    width: 120px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
 .menu-buttons #tabs .btn-menu a.active {
   background: #1c1b1b;
   background: linear-gradient(180deg, #1c1b1b 0%, rgba(37, 34, 32, 0.2833508403) 51%, #322021 100%);
@@ -379,6 +399,11 @@
   -webkit-box-shadow: 0px 11px 11px -2px #000000;
   box-shadow: 0px 11px 11px -2px #000000;
   text-shadow: rgba(235, 227, 227, 0.5) 0 0 10px, rgba(253, 253, 253, 0.5) 0 0 10px;
+}
+@media screen and (max-width: 576px) {
+  .menu-buttons #tabs .btn-menu a.active {
+    transform: none;
+  }
 }
 
 .text-orange {

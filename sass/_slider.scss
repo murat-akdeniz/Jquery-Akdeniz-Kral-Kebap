@@ -75,11 +75,16 @@
                font-size: 1rem;
                font-style: italic;
                font-weight: 600;
+               font-family: Georgia, 'Times New Roman', Times, serif;
                /* paragraf küçük boyutlarda kutunun borderından
                   dışarı taşmaması için padding right ve left kullandım.
                */
                @media screen and (max-width:768px) {    
                   padding: 0 5rem; 
+                  
+               }
+               @media screen and (max-width:576px) {    
+                  padding:0; 
                }
             }
             .btnAll{
