@@ -45,5 +45,14 @@ html,body{
   margin-top: 2rem;
 }
 
+main{
+  @media screen and (max-width:576px) {
+    .title-separator img{
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
 
 
